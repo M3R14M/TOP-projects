@@ -90,6 +90,10 @@ footer {
     color: #fff;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 nav a,
 .hero p {
     color: #e5e7eb;
