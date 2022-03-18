@@ -12,20 +12,27 @@ body {
 .wrapper {
     display: flex;
     flex-flow: column nowrap;
-
-
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 76vw;
+    width: 100%;
     padding: 0 12vw;
-    height: 10vh;
+    height: 12.5vh;
+    position: fixed
 }
 
 a {
     text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+a:hover {
+    color: #3882f6;
+    transition: 0.3s ease-in;
 }
 
 h1 {
@@ -57,8 +64,12 @@ button {
     padding: 0.5em 2em;
     font-size: 1em;
     font-weight: bolder;
+    transition: 0.3s ease-in;
 }
-
+button:hover {
+    color: #1f2937;
+    background: #e5e7eb;
+}
 header,
 .hero,
 footer {
@@ -91,7 +102,6 @@ li {
     width: 50vw;
     padding: 2em;
     display: flex;
-
 }
 
 .placeholder {
@@ -111,7 +121,7 @@ li {
     display: flex;
     justify-content: center;
     gap: 2em;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 .card {
@@ -128,7 +138,6 @@ li {
     width: 150px;
     border: 3px solid #3882f6;
     border-radius: 15px;
-
 }
 
 blockquote {
@@ -177,5 +186,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 12.5vh;
 }
