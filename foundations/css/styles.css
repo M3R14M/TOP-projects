@@ -255,6 +255,7 @@ footer {
         max-width: 96vw;
         padding: 2vw;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     button {
