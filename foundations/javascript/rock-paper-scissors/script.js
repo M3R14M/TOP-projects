@@ -1,5 +1,7 @@
 const rpsArray = ["Rock", "Paper", "Scissors"];
 
+
 function computerPlay() {
-    return rpsArray;
+
+    return rpsArray[Math.floor(Math.random() * rpsArray.length)];
 }
