@@ -1,0 +1,164 @@
+body {
+    font-family: Helvetica, monospace;
+    color: white;
+    background: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 99vw;
+}
+
+
+h1 {
+    color: darkcyan;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+footer {
+    padding: 3em;
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+.scorebord {
+    max-width: 600px;
+    width: 75%;
+    display: flex;
+    background: #0b6868;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 2em;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.scorebord > h2 {
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.points > p {
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+.points {
+    max-width: 40%;
+    width: 300px;
+    aspect-ratio: 2/1;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 0.5em;
+}
+
+
+button {
+    width: 128px;
+    height: 128px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0;
+    transition: 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#rock {
+    background-image: url('img/rock.svg');
+    background-size: cover;
+}
+
+#rock:hover {
+    background-image: url('img/rock_shadow.svg');
+}
+
+#paper {
+    background-image: url('img/paper.svg');
+    background-size: cover;
+}
+
+#paper:hover {
+    background-image: url('img/paper_shadow.svg');
+}
+
+#scissors {
+    background-image: url('img/scissors.svg');
+    background-size: cover;
+}
+
+#scissors:hover {
+    background-image: url('img/scissors_shadow.svg');
+}
+
+background-image {
+    filter: drop-shadow(0 0 2px white);
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        height: auto;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    button {
+        width: 25vw;
+        height: 25vw;
+        max-width: 128px;
+        max-height: 128px;
+    }
+
+    .game {
+        font-size: 8px;
+    }
+
+    .score {
+        flex-wrap: wrap;
+    }
+}
