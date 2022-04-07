@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-    <html>
-    <head>
+<html>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Rock Paper Scissors</title>
@@ -14,27 +15,36 @@
         <div class="portrait">
             <header>
                 <h1>Rock Paper Scissors</h1>
+                <p>Will you beat the computer? The first to get 5 points, wins! </p>
             </header>
             <div class="game">
-                <div class="scorebord">
-                    <h2>Scorebord</h2>
+                <p id="winnerResult"></p>
+                <div class="scoreboard">
+                    <h2>Scoreboard</h2>
                     <div class="score">
                         <div class="points">
                             <h3>Player</h3>
-                            <p id="playerScore">0</p>
+                            <p id="playerScore"></p>
                         </div>
                         <div class="points">
                             <h3>Computer</h3>
-                            <p id="computerScore">0</p>
+                            <p id="computerScore"></p>
                         </div>
                     </div>
                 </div>
-                <h2>Choose wisely.</h2>
-                <div class="choice">
-
-                    <button id="rock"></button>
-                    <button id="paper"></button>
-                    <button id="scissors"></button>
+                <div id="result">
+                    <p id="roundResult"></p>
+                </div>
+                <div id="playerInput">
+                    <h2>Choose wisely.</h2>
+                    <div class="choice">
+                        <button id="rock"></button>
+                        <button id="paper"></button>
+                        <button id="scissors"></button>
+                    </div>
+                </div>
+                <div id="newGame">
+                    Play again
                 </div>
             </div>
         </div>
@@ -46,4 +56,6 @@
             <p><a href="https://github.com/M3R14M"><i class="fa-brands fa-github"></i></a></p>
         </footer>
     </div>
-</body></html>
+</body>
+
+</html>
