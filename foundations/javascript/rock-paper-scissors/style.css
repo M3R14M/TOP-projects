@@ -47,7 +47,10 @@ header {
 }
 
 header p {
+    max-width: 75vw;
+    margin: 0 auto;
     margin-top: 0.25em;
+    margin-bottom: 1em;
 }
 
 footer {
@@ -275,5 +278,9 @@ button:hover {
 
     .score {
         flex-wrap: wrap;
+    }
+
+    #winnerResult {
+        width: 100vw;
     }
 }
