@@ -19,3 +19,34 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    width: 75vw;
+    border: 2px solid darkcyan;
+}
+
+/* Different shades of white to sketch with */
+.a20 {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.a40 {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.a60 {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.a80 {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.solid {
+    background: #FFF;
+}
