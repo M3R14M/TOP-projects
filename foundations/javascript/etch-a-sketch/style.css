@@ -1,0 +1,21 @@
+/*
+=== Colors ===
+white:          #FFF;  
+darkcyan:       #008b8b;
+background:     #222;
+
+Shades inbetween darkcyan and background:
+#067A7A
+#0B6868
+#115757
+#174545
+#1C3434
+*/
+
+body {
+    font-family: Helvetica, monospace;
+    color: white;
+    background: #222;
+    margin: 0;
+    padding: 0;
+}
