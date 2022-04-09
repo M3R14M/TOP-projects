@@ -12,7 +12,17 @@ function createGrid(sizeInput) {
 }
 
 function draw() {
-    this.className = 'solid';
+    if (this.classList.contains('empty') == true) {
+        this.className = 'a20';
+    } else if (this.classList.contains('a20') == true) {
+        this.className = 'a40';
+    } else if (this.classList.contains('a40') == true) {
+        this.className = 'a60';
+    } else if (this.classList.contains('a60') == true) {
+        this.className = 'a80';
+    } else {
+        this.className = 'solid';
+    }
 }
 // Button for clearing current grid and creating a new grid
 let btn = document.getElementById('clear');
