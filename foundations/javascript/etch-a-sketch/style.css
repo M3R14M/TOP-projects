@@ -20,6 +20,14 @@ body {
     padding: 0;
 }
 
+header {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -34,7 +42,25 @@ body {
 #grid > div {
     box-sizing: border-box;
     border: 1px solid #1c3434;
+    transition: 0.2s ease-in;
 }
+
+.btn {
+    background: #222;
+    color: #067a7a;
+    padding: 0.5em 1em;
+    border: 2px solid #1c3434;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background: #115757;
+    color: #FFF;
+    border-color: darkcyan;
+    transform: scale(1.05);
+}
+
 
 /* For testing purposes and perhaps future function change
 #grid > div:hover {
