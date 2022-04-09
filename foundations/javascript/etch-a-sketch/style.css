@@ -5,11 +5,11 @@ darkcyan:       #008b8b;
 background:     #222;
 
 Shades inbetween darkcyan and background:
-#067A7A
-#0B6868
+#067a7a
+#0b6868
 #115757
 #174545
-#1C3434
+#1c3434
 */
 
 body {
@@ -28,6 +28,17 @@ body {
     margin: 0 auto;
     width: 75vw;
     border: 2px solid darkcyan;
+    max-height: 75vh;
+}
+
+#grid > div {
+    box-sizing: border-box;
+    border: 1px solid #1c3434;
+}
+
+/* For testing purposes and perhaps future function change
+#grid > div:hover {
+    background: #1c3434;
 }
 
 /* Different shades of white to sketch with */

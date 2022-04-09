@@ -1,12 +1,17 @@
-const grid = document.getElementById("grid");
-let box;
-let amount = 16;
-let sizeGrid = Math.pow(amount, 2);
+const grid = document.getElementById('grid');
 
-function fill(sizeGrid) {
+function createGrid(sizeInput) {
+    let sizeGrid = Math.pow(sizeInput, 2);
     for (let i = 0; i < sizeGrid; i++) {
-        box = document.createElement("div");
-        grid.append(box);
+        let raster = document.createElement('div');
+        raster.classList.add('empty');
+        grid.append(raster);
     }
+    let pixelGrid = grid.querySelectorAll('div');
+    pixelGrid.forEach(pixel => pixel.addEventListener('mouseover', draw));
 }
-fill(sizeGrid);
+
+function draw() {
+    this.className = 'solid';
+}
+createGrid(16);
