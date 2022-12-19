@@ -152,6 +152,7 @@ a:hover {
     animation: result 5s infinite;
     text-shadow: 0 0 20px black;
     margin: 0 auto;
+    z-index: 1;
 }
 
 @keyframes result {
