@@ -1,0 +1,41 @@
+* {
+    font-family: Helvetica, monospace;
+    color: white;
+    background: #222;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+section {
+    max-width: 450px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    color: darkcyan;
+}
+
+h1,
+h3 {
+    color: darkcyan;
+    text-align: center;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: darkcyan;
+}
