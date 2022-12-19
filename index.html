@@ -7,8 +7,9 @@
             const data = await response.json();
             let htmlString = '<ul>';
             for (let file of data) {
+                if (file.size == 0){
                 htmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
-            }
+                }};
             htmlString += '</ul>';
             document.getElementsByTagName('body')[0].innerHTML = htmlString;
         })()
