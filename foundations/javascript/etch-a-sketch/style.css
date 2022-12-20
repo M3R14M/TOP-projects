@@ -19,10 +19,14 @@ body {
     margin: 0;
     padding: 0;
 }
+.wrapper {
+    height: 100vh;
+    max-width: 99vw;
+}
 
 header {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -36,7 +40,7 @@ header {
     margin: 0 auto;
     max-width: 90vw;
     border: 2px solid darkcyan;
-    max-height: 75vh;
+    max-height: 75%;
 }
 
 #grid > div {
@@ -87,3 +91,29 @@ header {
 .solid {
     background: #FFF;
 }
+
+/*Footer*/
+footer {
+    padding: 1.5em;
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em auto 0 auto;
+    box-sizing: border-box;
+}
+
+footer > p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: darkcyan;
+}
+

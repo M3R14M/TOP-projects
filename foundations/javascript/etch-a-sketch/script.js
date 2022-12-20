@@ -30,11 +30,15 @@ btn.addEventListener('click', clear);
 
 function clear() {
     sizeInput = prompt('What width should your grid have?');
-    if (sizeInput > 64) {
+    if (sizeInput == null) {
+        return; //  in case of cancel
+    } else if (sizeInput > 64) {
         sizeInput = prompt('The maximum allowed size is 64.');
     } else if (sizeInput < 4) {
         sizeInput = prompt('A minimum of 4 is required to create a grid');
-    }
+    } else if (isNaN(sizeInput) == true) {
+        sizeInput = 16; // back to default in case of faulty input
+    };
     grid.textContent = '';
     grid.style.gridTemplateColumns = `repeat(${sizeInput}, 1fr)`;
     grid.style.gridTemplateRows = `repeat(${sizeInput}, 1fr)`;
